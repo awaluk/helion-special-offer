@@ -1,0 +1,21 @@
+{
+  "name": "awaluk/helion-special-offer",
+  "description": "Library to download daily special offer from Helion",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Arkadiusz Waluk",
+      "email": "arkadiusz@waluk.pl",
+      "homepage": "https://waluk.pl"
+    }
+  ],
+  "require": {
+    "php": ">=7"
+  },
+  "autoload": {
+    "psr-4": {
+      "awaluk\\HelionSpecialOffer\\": "src/"
+    }
+  }
+}
