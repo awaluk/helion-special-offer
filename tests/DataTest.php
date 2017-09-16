@@ -1,7 +1,7 @@
 <?php
 
-use awaluk\HelionSpecialOffer\Data;
 use awaluk\HelionSpecialOffer\Book;
+use awaluk\HelionSpecialOffer\Data;
 use PHPUnit\Framework\TestCase;
 
 class DataTest extends TestCase
@@ -26,7 +26,7 @@ class DataTest extends TestCase
         $data->download();
 
         $this->assertInternalType('string', $data->get('title'));
-        $this->assertGreaterThan(0, (float)$data->get('price'));
+        $this->assertGreaterThan(0, (float) $data->get('price'));
     }
 
     public function testGetSuccess()
@@ -35,7 +35,7 @@ class DataTest extends TestCase
         $data->download();
 
         $this->assertInternalType('string', $data->get('title'));
-        $this->assertGreaterThan(0, (float)$data->get('price'));
+        $this->assertGreaterThan(0, (float) $data->get('price'));
     }
 
     public function testGetError()

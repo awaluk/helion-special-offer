@@ -48,8 +48,8 @@ class Data
     {
         return new Book(
             $this->get('title'),
-            (float)$this->get('price'),
-            (float)$this->get('newprice'),
+            (float) $this->get('price'),
+            (float) $this->get('newprice'),
             $this->get('link'),
             $this->get('cover'),
             $this->get('to_cart')
