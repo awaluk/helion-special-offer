@@ -1,5 +1,7 @@
 # Helion Special Offer
 
+[![Travis](https://travis-ci.org/awaluk/helion-special-offer.svg?branch=master)](https://travis-ci.org/awaluk/helion-special-offer)
+
 Simple library to read data from [Helion.pl](http://helion.pl) special daily offer.
 
 **Thanks to [Helion](http://helion.pl) for preparing data as JSON.**
