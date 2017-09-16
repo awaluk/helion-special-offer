@@ -1,9 +1,5 @@
 <?php
-/**
- * Operations on data
- * @author Arkadiusz Waluk <arkadiusz@waluk.pl>
- * @license MIT
- */
+
 namespace awaluk\HelionSpecialOffer;
 
 class Data
@@ -13,11 +9,6 @@ class Data
     private $file;
     private $data;
 
-    /**
-     * @param string $partnerNumber
-     * @param int $coverSize
-     * @param string $file
-     */
     public function __construct(string $partnerNumber, int $coverSize = 326, string $file = null)
     {
         $this->partnerNumber = $partnerNumber;
@@ -26,9 +17,6 @@ class Data
         $this->loadFromCache();
     }
 
-    /**
-     * Load JSON from local file
-     */
     public function loadFromCache()
     {
         if (!empty($this->file) && file_exists($this->file)) {
@@ -39,9 +27,6 @@ class Data
         }
     }
 
-    /**
-     * Download JSON from helion.pl and save to local file
-     */
     public function download()
     {
         $url = 'https://helion.pl/plugins/new/promocja.phi?type=json';
@@ -54,20 +39,11 @@ class Data
         }
     }
 
-    /**
-     * Get data from downloaded
-     * @param string $name
-     * @return mixed
-     */
     public function get(string $name)
     {
         return isset($this->data[$name]) ? $this->data[$name] : false;
     }
 
-    /**
-     * Get book with data
-     * @return Book
-     */
     public function getBook(): Book
     {
         return new Book(

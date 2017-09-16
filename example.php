@@ -1,9 +1,4 @@
 <?php
-/**
- * Example usage
- * @author Arkadiusz Waluk <arkadiusz@waluk.pl>
- * @license MIT
- */
 
 // autoload from composer
 require_once 'vendor/autoload.php';
